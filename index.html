@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            var scrollpos = localStorage.getItem('scrollpos');
+            if (scrollpos) window.scrollTo(0, scrollpos);
+        });
+
+        window.onbeforeunload = function (e) {
+            localStorage.setItem('scrollpos', window.scrollY);
+        };
+    </script>
+</head>
+
+<body>
+    <header>
+        <!-- Top Header -->
+        <div class="top-header">
+            <p> we are nw open! covid-19 information (click here)</p>
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="background-img">
+            <div class="color-overlay"></div>
+
+            <section id="hero">
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Awards</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li id="logo-li"> <img id="logo" src="assets/Logo-White.png"> </li>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Menu</a></li>
+                        <li><a href="">Location</a></li>
+                    </ul>
+                </nav>
+
+                <h1 class="main-title">Vaping, like you've <br> never experienced</h1>
+                <h5 class="sub-heading">Est. 2013</h5>
+                <button class="main-button"> Find a location </button>
+            </section>
+        </div>
+
+    </header>
+    <section id="section-2">
+        <h2> The upscale vaping expierence</h2>
+        <p>
+            When it comes to vaping, Vapeco has you covered. Our huge selection of brand-name vape starter kits, mods,
+            tanks, and 350+ premium e-liquid and nic salt flavors are second to none. With over seven dedicated years of
+            experience and expertise, Vapeco's friendly and helpful staff will steer you in the right direction and
+            assist you with any questions or concerns you may have. Vapeco is the vape shop for you.
+
+            Our selection of popular hardware and ejuice expands weekly. Our mission to you is to provide you with a
+            vaping experience you never thought existed. We hope to see you soon.
+        </p>
+    </section>
+
+    <section id="recent-awards">
+        <div class="color-overlay"></div>
+        <div id="recent-awards-content">
+            <h1 class="main-title"> Recent Awards </h1>
+            <img src="assets/yelp.png">
+        </div>
+    </section>
+
+    <section id="reach-out-section">
+        <h2> Reach Out</h2>
+        <p> Please use the form below to contact Vapeco. We typically respond to all inquiries within 48 hours. For a
+            faster response, feel free to call us during our business hours at +1 702 979 6000.
+        </p>
+
+        <!-- Form Sectiion -->
+        <section class="form-section">
+            <h3> Please complete the form <br> below</h3>
+            <form>
+                <p> Name* </p>
+                <input type="text" name="test">
+                
+                <p> Email* </p>
+                <input type="text" name="test">
+
+                <p> Subject* </p>
+                <input type="text" name="test">
+
+                <p> Message* </p>
+                <input type="text" name="test">
+
+                <p> Phone </p>
+                <input type="number" name="test">
+
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        </section>
+</body>
+
+</html>
